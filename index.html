@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="resources/scripts.js"></script>
+    <title>Document</title>
+    <link rel="stylesheet" href="resources/style.css">
+    <!-- <style>
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+        .textarea-container {
+            width: 45%;
+            margin-bottom: 10px;
+        }
+        textarea {
+            width: 100%;
+            height: 200px;
+            resize: none; /* Bloquea el redimensionamiento */
+        }
+    </style> -->
+</head>
+<body>
+    <h1>Encriptador</h1> 
+    <div class="container">
+        
+        <div class="textarea-container">
+            <textarea  onkeypress="return ((event.keyCode >= 97 && event.keyCode <= 122) || event.keyCode === 32)" class="restricion" name="UIDtext" id="01" cols="50" rows="10" style="width: 644px; height: 442px;" pattern="[a-zA-Z0-9\s]+">Ingrese su texto aqui</textarea>
+            <div>
+                <img src="resources/Bten.png" alt="" onclick="encriptador()" onclick="eliminar()">  
+                <img src="resources/Btdes.png" alt="" onclick="descencriptador()">
+            </div>
+        </div>
+        <div class="textarea-container">
+            <textarea onkeypress="return ((event.keyCode >= 97 && event.keyCode <= 122) || event.keyCode === 32)" class="restricion" name="CPtext" id="02" cols="80" rows="10" style="width: 521px; height: 512px;" pattern="[a-zA-Z0-9\s]+" ></textarea>
+             
+
+            <img src="resources/Muñeco.png" alt="Imagen de fondo" class="overlay-image">
+        </div>
+    </div>
+</body>
+</html>
+
+
+ 
