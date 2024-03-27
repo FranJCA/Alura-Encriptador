@@ -28,7 +28,8 @@
     <div class="container">
         
         <div class="textarea-container">
-            <textarea  onkeypress="return ((event.keyCode >= 97 && event.keyCode <= 122) || event.keyCode === 32)" class="restricion" name="UIDtext" id="01" cols="50" rows="10" style="width: 644px; height: 442px;" pattern="[a-zA-Z0-9\s]+">Ingrese su texto aqui</textarea>
+            <textarea onclick="borrar()" onkeypress="return ((event.keyCode >= 97 && event.keyCode <= 122) || event.keyCode === 32) " class="restricion" name="UIDtext" id="01" cols="50" rows="10" style="width: 644px; height: 442px;" pattern="[a-zA-Z0-9\s]+">Ingrese su texto aqui</textarea>
+            <img src="resources/avis.png " alt="" >
             <div>
                 <img src="resources/Bten.png" alt="" onclick="encriptador()" onclick="eliminar()">  
                 <img src="resources/Btdes.png" alt="" onclick="descencriptador()">
@@ -41,6 +42,10 @@
             <img src="resources/Muñeco.png" alt="Imagen de fondo" class="overlay-image">
         </div>
     </div>
+
+    <footer>
+        <p>&copy; 2024 Francisco Cortes Grupo 6 Alura</p>
+      </footer>
 </body>
 </html>
 

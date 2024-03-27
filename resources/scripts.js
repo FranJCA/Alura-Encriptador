@@ -125,3 +125,18 @@ function eliminar(){
 
 }
 
+function borrar() {
+    // Borrar el texto del campo de entrada cuando se hace clic
+    var result = document.getElementById("01");
+    result.value = "";
+}
+
+
+
+
+
+
+
+
+
+
